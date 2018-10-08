@@ -1,4 +1,4 @@
 # php login app
-Bootstrap layout
-Proper Validations
-Welcome message
+- Bootstrap layout
+- Proper Validations
+- Welcome message
