@@ -3,7 +3,7 @@
   session_start();
 
   // Include db config
-  require_once 'config/config.php';
+  require_once 'config.php';
 
   // Validate login
   if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
