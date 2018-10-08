@@ -1,7 +1,7 @@
 <?php  
 session_start();
   // Include db config
-  require_once 'config/config.php';
+  require_once 'config.php';
 
   // Init vars
   $userinput = $password = '';
