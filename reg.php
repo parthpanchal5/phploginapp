@@ -1,6 +1,6 @@
 <?php  
   // Include db config
-  require_once 'config/config.php';
+  require_once 'config.php';
 
   // Init vars
   $firstname = $lastname = $username = $email = $password = $confirm_password = '';
