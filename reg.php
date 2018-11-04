@@ -15,12 +15,17 @@
     $password = mysqli_real_escape_string($conn, $_POST['password']);
     $confirm_password = mysqli_real_escape_string($conn, $_POST['confirm_password']);
     // Empty
-    if(empty($firstname) || empty($lastname) || empty($username) || empty($email) || empty($password) || empty($confirm_password)){
+    if(empty($firstname)){
       $firstname_err =  "Firstname is required";
+    }if(empty($lastname)){
       $lastname_err = "Lastname is required";
+    }if(empty($username){
       $username_err = "Username is required (It must contain lowercase and digits)";
+    }if(empty($email)){
       $email_err = "Email is required";
+    }if(empty($password)){
       $password_err = "Password is required";
+    }if(empty($confirm_password)){
       $confirm_password_err = "Confirm Password is required";      
     }else{
       if(!preg_match("/^[a-zA-Z]*$/", $firstname) || !preg_match("/^[a-zA-Z]*$/", $lastname)){
